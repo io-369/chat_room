@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="chatRoom.css">
+</head>
+<body>
+  <header>
+    <h1>チャットルーム</h1>
+  </header>
+  <main>
+    <h2>タイムライン</h2>
+    <ul id="timeLine">
+      <li>何か投稿してみましょう</li>
+    </ul>
+  </main>
+  <form id="sendForm">
+    <div>
+      ニックネーム：<input type="text" id="name" name="name" size="40" placeholder="投稿太郎">
+    </div>
+    <div>
+      　　タイトル：<input type="text" id="title" name="title" size="40" placeholder="タイトルはこちら">
+    </div>
+    <div>
+      　　　　内容：
+      <textarea id="message" cols="40" rows="4" placeholder="今日は楽しかった！！"></textarea>
+    </div>
+    <div>
+      <button type="button" id="btnAuto">自動入力</button>
+      <input type="submit" value="送信">
+    </div>
+  </form>
+  <script src="chatRoom.js"></script>
+</body>
+</html>
